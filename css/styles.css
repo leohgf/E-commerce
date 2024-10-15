@@ -33,7 +33,6 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 15px 0;
-    align-items: center;
 }
 
 nav ul li a {
@@ -42,7 +41,6 @@ nav ul li a {
     padding: 10px 15px;
     border-radius: 10px;
     transition: background-color 0.3s;
-    margin: 5px 0;
 }
 
 nav ul li a:hover {
@@ -69,14 +67,13 @@ footer {
 button {
     background-color: #28a745;
     color: #fff;
-    padding: 12px;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
     font-family: 'Sarabun', sans-serif;
     margin: 25px 10px;
-    width: 100%;
 }
 
 button:hover {
@@ -98,8 +95,7 @@ button:hover {
     justify-content: center;
 }
 .product-image img {
-    width: 100%;
-    max-width: 300px;
+    width: 250px;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
@@ -176,46 +172,18 @@ button:hover {
 }
 
 /* Responsive Design */
-/* เพิ่มสไตล์สำหรับโทรศัพท์มือถือ */
 @media (max-width: 700px) {
-    body {
-        padding: 10px; /* เพิ่ม Padding ให้กับ Body */
-    }
-
-    header h1 {
-        font-size: 1.8rem; /* ขนาดฟอนต์เล็กลง */
+    .product {
+        flex-direction: column;
+        align-items: center;
     }
 
     nav ul {
-        flex-direction: column; /* จัดเรียงเมนูแนวตั้ง */
+        flex-direction: column;
         align-items: center;
     }
 
     nav ul li {
-        margin: 5px 0; /* ระยะห่างระหว่างเมนู */
-    }
-
-    main {
-        padding: 1rem; /* ลด Padding ของ Main */
-    }
-
-    .product {
-        flex-direction: column; /* รายการสินค้าจัดเรียงในแนวตั้ง */
-        align-items: center;
-    }
-
-    .product-image img {
-        width: 100%; /* ทำให้ภาพกว้างเต็มที่ในอุปกรณ์เล็ก */
-        max-width: 300px; /* จำกัดความกว้างของภาพ */
-    }
-
-    button {
-        width: 100%; /* ทำให้ปุ่มกว้างเต็มที่ */
-        padding: 12px; /* เพิ่ม Padding ของปุ่ม */
-        font-size: 1rem; /* ขนาดฟอนต์ของปุ่ม */
-    }
-
-    .items {
-        width: 100%; /* ทำให้รายการสินค้าเต็มความกว้าง */
+        margin: 10px 0;
     }
 }
