@@ -1,0 +1,189 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Sarabun', sans-serif;
+    line-height: 1.6;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: gray;
+}
+
+/* Main Section */
+main {
+    flex: 1;
+    padding: 2rem;
+    background: linear-gradient(to bottom, #ebdcbb, #e8b573);
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Buttons */
+button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Sarabun', sans-serif;
+    margin: 25px 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Product Items */
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.product-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+.product-image img {
+    width: 250px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.product-image img:hover {
+    transform: scale(1.1);
+}
+
+.item input.quantity {
+    background-color: rgb(142, 255, 193);
+    width: 60px;
+    padding: 5px;
+    margin: 10px 0;
+    border: 1px solid #180e0e;
+    border-radius: 5px;
+    text-align: center;
+}
+.items {
+    border: 1px solid #180e0e;
+    border-radius: 10px;
+    padding: 15px;
+    width: 150px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-size: 16px;
+}
+
+.items img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.items h2 {
+    font-size: 18px;
+    color: #2c1616;
+    margin: 10px 0;
+}
+
+.items a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.items:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+}
+
+.items input.quantity {
+    width: 60px;
+    padding: 5px;
+    margin: 10px 0;
+    border: 1px solid #180e0e;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* ปุ่มซื้อเลย! */
+.buy-now {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.buy-now:hover {
+    background-color: #cc5200;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+    .product {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}

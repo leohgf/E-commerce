@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Scroll of Remove Curse - รายละเอียดสินค้า</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>รายละเอียดสินค้า</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">หน้าแรก</a></li>
+                <li><a href="../category.html">หมวดหมู่สินค้า</a></li>
+                <li><a href="../cart.html">ตะกร้าสินค้า</a></li>
+                <li><a href="../checkout.html">ชำระเงิน</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="product-detail">
+        <section class="product-info">
+            <h2>Scroll of Remove Curse</h2>
+            <div class="product-image">
+                <img src="../หมวด2/product8.png" alt="Scroll of Remove Curse">
+            </div>
+            <p>เมื่อใช้งาน ลบล้างคำสาปใดๆ ให้กับคน 1 คนในระยะ 1 เมตร สำหรับผู้ที่ต้องเผชิญหน้ากับคำสาปร้ายแรงหรืออาการไม่พึงประสงค์จากเวทมนตร์ สามารถช่วยให้ผู้ถูกคำสาปกลับคืนสู่สภาพเดิมได้ทันที</p>
+            <p class="price">ราคา: <strong>1750 บาท</strong></p>
+            <div class ="item">
+                <input type="number" min="1" value="1" class="quantity" aria-label="จำนวนสินค้า">
+            </div>
+            <div class="product-buttons">
+                <a href="../cart.html">
+                    <button>เพิ่มไปยังตะกร้า</button>
+                </a>
+                <a href="../category.html">
+                    <button class="back-button">กลับไปยังหมวดหมู่</button>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 ร้านค้าออนไลน์. สงวนลิขสิทธิ์.</p>
+    </footer>
+</body>
+</html>
+
+<script>
+    // ฟังก์ชันสำหรับอัปเดตราคา
+    function updatePrice() {
+        const quantityInput = document.querySelector('.quantity');
+        const priceElement = document.querySelector('.price strong');
+        const unitPrice = 1750; // ราคาเดิมของสินค้า
+
+        // คำนวณราคาทั้งหมด
+        const totalPrice = unitPrice * quantityInput.value;
+        priceElement.textContent = `${totalPrice} บาท`;
+    }
+
+    // เพิ่มการฟังการเปลี่ยนแปลงใน input
+    document.querySelector('.quantity').addEventListener('input', updatePrice);
+</script>
