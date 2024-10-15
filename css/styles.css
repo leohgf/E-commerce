@@ -172,18 +172,46 @@ button:hover {
 }
 
 /* Responsive Design */
+/* เพิ่มสไตล์สำหรับโทรศัพท์มือถือ */
 @media (max-width: 700px) {
-    .product {
-        flex-direction: column;
-        align-items: center;
+    body {
+        padding: 10px; /* เพิ่ม Padding ให้กับ Body */
+    }
+
+    header h1 {
+        font-size: 1.8rem; /* ขนาดฟอนต์เล็กลง */
     }
 
     nav ul {
-        flex-direction: column;
+        flex-direction: column; /* จัดเรียงเมนูแนวตั้ง */
         align-items: center;
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin: 5px 0; /* ระยะห่างระหว่างเมนู */
+    }
+
+    main {
+        padding: 1rem; /* ลด Padding ของ Main */
+    }
+
+    .product {
+        flex-direction: column; /* รายการสินค้าจัดเรียงในแนวตั้ง */
+        align-items: center;
+    }
+
+    .product-image img {
+        width: 100%; /* ทำให้ภาพกว้างเต็มที่ในอุปกรณ์เล็ก */
+        max-width: 300px; /* จำกัดความกว้างของภาพ */
+    }
+
+    button {
+        width: 100%; /* ทำให้ปุ่มกว้างเต็มที่ */
+        padding: 12px; /* เพิ่ม Padding ของปุ่ม */
+        font-size: 1rem; /* ขนาดฟอนต์ของปุ่ม */
+    }
+
+    .items {
+        width: 100%; /* ทำให้รายการสินค้าเต็มความกว้าง */
     }
 }
